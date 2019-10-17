@@ -2,20 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
-
-let tables = [{
-    name : "Avinash",
-    contact : "8790811083",
-    email : "avioffice92@gmail.com"
-},{
-    name : "Akhilesh",
-    contact : "8790811084",
-    email : "ace92@gmail.com"
-},{
-    name : "Ravi Babu",
-    contact : "9963688728",
-    email : "ravi@gmail.com"
-}];
+const tables = require('./model/tables')
 
 let waitingList =[{
     name : "Padma",
